@@ -1,8 +1,5 @@
 import TelegramBot from 'node-telegram-bot-api';
-import express, { query } from 'express';
-import bodyParser from 'body-parser';
 import fetch from 'node-fetch';
-import axios from 'axios'
 // Вставте свій токен бота, отриманий від BotFather
 const token = '7484610747:AAGuWlwXNpwMCas6xPesYIEzwPm7BhIbAkE';
 const nowPaymentsApiKey = '9D7NR9E-DBRM40S-QJCQAX3-DYHWAKW';
@@ -20,8 +17,6 @@ const { textBack, listOfAccs, accsLeft, faq, refSystem, buyAnAccs,
         withdrawalCreater, generateWithdrawalLink
     }  = linksKeyboard
 
-const app = express();
-app.use(express.json());
 
 // Меню для вибору мови
 const langKeyboard = [
